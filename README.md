@@ -42,11 +42,12 @@ npm run preview  # 预览 dist，地址 http://127.0.0.1:4173/yanan-wei/
 `https://viananjune.github.io/yanan-wei/`
 
 1. 把代码推到 `main`。
-2. 打开仓库 **Settings → Pages → Build and deployment**。
-3. **Source** 选 **GitHub Actions**（不要选 Deploy from a branch）。
+2. 打开 [Settings → Pages](https://github.com/viananJune/yanan-wei/settings/pages)。
+3. 在 **Build and deployment** 里，把 **Source** 选成 **GitHub Actions**。不要选 Deploy from a branch。选中后页面会保存，没有单独的 Save 按钮。
 4. `.github/workflows/pages.yml` 会在推送到 `main` 时构建并部署。Pull request 只跑构建，不部署。也可以在 Actions 页手动运行 **Deploy GitHub Pages**。
-5. 首次部署若提示启用 `github-pages` 环境，按 GitHub 的确认完成即可。
-6. 站点包含 `public/.nojekyll`，避免 Jekyll 忽略下划线开头的文件。
+5. 若部署步骤失败并提示 `Ensure GitHub Pages has been enabled`，是 Source 还没改成 GitHub Actions。改完后打开 [Actions → Deploy GitHub Pages](https://github.com/viananJune/yanan-wei/actions/workflows/pages.yml)，进入失败的那次运行，点 **Re-run failed jobs**。
+6. 首次部署若提示启用 `github-pages` 环境，按 GitHub 的确认完成即可。
+7. 站点包含 `public/.nojekyll`，避免 Jekyll 忽略下划线开头的文件。
 
 也可以用 API 把 Pages 来源设为 GitHub Actions（站点尚未创建时）：
 
@@ -120,9 +121,10 @@ npm run preview   # http://127.0.0.1:4173/yanan-wei/
 `base` is `/yanan-wei/`. Live URL: <https://viananjune.github.io/yanan-wei/>.
 
 1. Push to `main`.
-2. Repo **Settings → Pages → Build and deployment**.
-3. Set **Source** to **GitHub Actions**.
+2. Open [Settings → Pages](https://github.com/viananJune/yanan-wei/settings/pages).
+3. Under **Build and deployment**, set **Source** to **GitHub Actions** (not Deploy from a branch). The choice saves by itself.
 4. `.github/workflows/pages.yml` builds and deploys on pushes to `main`. Pull requests build only.
+5. If deploy fails with `Ensure GitHub Pages has been enabled`, the source was not GitHub Actions yet. After changing it, open the failed run and choose **Re-run failed jobs**: [Deploy GitHub Pages](https://github.com/viananJune/yanan-wei/actions/workflows/pages.yml).
 
 Or with the API:
 
