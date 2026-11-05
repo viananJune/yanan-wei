@@ -1,0 +1,31 @@
+{
+  "name": "Yanan Wei",
+  "sloganCn": "做能自己每天用的自动化与信息工作流",
+  "sloganEn": "Automation and information workflows I use myself, every day.",
+  "intro": "这里放下三件正在运行的个人工作：头部账号的时间线、出海早报，以及自己的代理工作台。每件都按问题、做法、结果和技术栈来写。联系方式只有 GitHub。",
+  "github": "https://github.com/viananJune",
+  "githubHandle": "viananJune",
+  "contactNote": "没有公开邮箱或表单。代码和后续阅读从 GitHub 开始。",
+  "nav": [
+    { "to": "/", "label": "首页｜Home" },
+    { "to": "/work", "label": "工作｜Work" },
+    { "to": "/about", "label": "关于｜About" }
+  ],
+  "principles": [
+    {
+      "title": "自己先用",
+      "titleEn": "Daily use",
+      "body": "放上来的流程，是早上或固定钟点会打开的，不是演示稿。"
+    },
+    {
+      "title": "固定交付",
+      "titleEn": "Fixed delivery",
+      "body": "表格进早间摘要。早报在 06:00（Asia/Shanghai）完成编排、成报和同步。"
+    },
+    {
+      "title": "边界清楚",
+      "titleEn": "Clear boundary",
+      "body": "站点监测沿用既有 SOP。这些案例只写我自己接上的编排、成报、表格和同步。"
+    }
+  ]
+}
