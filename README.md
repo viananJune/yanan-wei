@@ -11,6 +11,8 @@ A personal portfolio. Chinese body, short English labels. The palette is pine, c
 
 线上地址 / Live: <https://viananjune.github.io/yanan-wei/>
 
+Pages 来源已设为 GitHub Actions。推送到 `main` 会重新部署。
+
 ---
 
 ## 中文
